@@ -1,0 +1,70 @@
+/* Базовые стили для мобильных */
+body {
+    font-size: 14px;
+    padding-bottom: 70px; /* Для плеера */
+}
+
+/* Адаптивные карточки */
+@media (max-width: 768px) {
+    .artist-card, .album-card {
+        margin-bottom: 15px;
+    }
+    
+    .card-img-top {
+        height: 150px !important;
+    }
+    
+    h1.display-5 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Адаптация шапок артиста/альбома */
+.artist-header, .album-header {
+    padding: 1rem 0 !important;
+}
+.artist-header .row, .album-header .row {
+    flex-direction: column;
+    text-align: center;
+}
+.artist-avatar, .album-cover {
+    margin: 0 auto 1rem;
+    max-width: 200px;
+}
+
+/* Адаптация треков */
+.track-item {
+    padding: 10px 5px;
+}
+.track-info h6 {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+.track-meta {
+    font-size: 0.8rem;
+}
+
+/* Мобильный плеер */
+.player-container {
+    padding: 5px 0;
+}
+#now-playing {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.player-container .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Формы */
+.mobile-form .form-control {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
